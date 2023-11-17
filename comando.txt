@@ -1,0 +1,80 @@
+<div class="row mt-5 d-flex justify-content-center">
+            <div class="card col-4 border border-warning" style="width: 22rem;">
+                <img class="card-img-top rounded-3 mt-1 " src="https://media.gettyimages.com/id/450245049/pt/foto/girlfriends-getting-new-haircut.jpg?s=612x612&w=0&k=20&c=xsi_1CWU4h5HhaWyKWvZiHYMB-Q94c7dPAq5PCKBGZI=" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">CORTE DE CABELO</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-warning fw-bold ">AGENDE AGORA</a>
+                    <a href="#" class="btn btn-success text-light ">VALOR R$ 50,00</a>
+                
+                </div>
+            </div>
+            <div class="card col-4 offset-1 border border-warning" style="width: 22rem;">
+                <img class="card-img-top rounded-3 mt-1" src="https://media.gettyimages.com/id/1281532877/pt/foto/young-woman-at-a-hair-salon-hairdresser-using-hairdryer.jpg?s=612x612&w=0&k=20&c=24-8KVM_6Xv7mtw8iDsugMHwgvppc3HZtYnNQdiFidQ=" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">ESCOVA</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-warning fw-bold">AGENDE AGORA</a>
+                    <a href="#" class="btn btn-success text-light ">VALOR R$ 50,00</a>
+                </div>
+            </div>
+            <div class="card col-4 offset-1 border border-warning" style="width: 22rem;">
+                <img class="card-img-top rounded-3 mt-1" src="https://media.gettyimages.com/id/1305824214/pt/foto/woman-dyeing-her-hair-at-the-salon.jpg?s=612x612&w=0&k=20&c=BRHkjvQ3_M13DqmieKg8b3IgOTKAzc2WcvydJKOPCtY=" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">TINTURAMENTO DE CABELO</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-warning fw-bold">AGENDE AGORA</a>
+                    <a href="#" class="btn btn-success text-light ">VALOR R$ 50,00</a>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5 d-flex justify-content-center">
+            <div class="card col-4   border border-warning" style="width: 22rem;">
+                <img class="card-img-top rounded-3 mt-1 " src="https://media.gettyimages.com/id/1298696127/pt/foto/women-with-beautiful-long-black-hair-at-treatment-in-hairstylist-salon.jpg?s=612x612&w=0&k=20&c=QNDXw7wmD6_FOHLcgPO4XmEeQeWVrWVw_Sodvq0sIbo=" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">LUZES NO CABELO</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-warning fw-bold ">AGENDE AGORA</a>
+                    <a href="#" class="btn btn-success text-light ">VALOR R$ 50,00</a>
+                </div>
+            </div>
+            <div class="card col-4 offset-1 border border-warning" style="width: 22rem;">
+                <img class="card-img-top rounded-3 mt-1" src="https://media.gettyimages.com/id/523103504/pt/foto/manicurist-applying-nail-polish.jpg?s=612x612&w=0&k=20&c=4Ikv2Ck9yRm659WkPugwugvRejHcP-6BbwWOp6psgO4=" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">MANICURE</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-warning fw-bold">AGENDE AGORA</a>
+                    <a href="#" class="btn btn-success text-light ">VALOR R$ 50,00</a>
+                </div>
+            </div>
+            <div class="card col-4 offset-1 border border-warning" style="width: 22rem;">
+                <img class="card-img-top rounded-3 mt-1" src="https://media.gettyimages.com/id/478817181/pt/foto/ela-%C3%A9-meticulous-com-ela-comp%C3%B5em.jpg?s=612x612&w=0&k=20&c=OF8158sUU1_CNxZzTodrHmw_E2wF_1tEBOBLqKIJz74=" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">MAQUIAGEM</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-warning fw-bold">AGENDE AGORA</a>
+                    <a href="#" class="btn btn-success text-light ">VALOR R$ 50,00</a>
+                </div>
+            </div>
+        </div>
+        <div class=" mt-5 d-flex justify-content-center">
+            <nav aria-label="Page navigation example">
+                <ul class="pagination fw-bold">
+                    <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true" class="text-black ">&laquo;</span>
+                        <span class="sr-only text-black ">Previous</span>
+                    </a>
+                    </li>
+                    <li class="page-item "><a class="page-link text-black " href="#">1</a></li>
+                    <li class="page-item"><a class="page-link text-black " href="#">2</a></li>
+                    <li class="page-item"><a class="page-link text-black " href="#">3</a></li>
+                    <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true" class="text-black ">&raquo;</span>
+                        <span class="sr-only text-black">Next</span>
+                    </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>

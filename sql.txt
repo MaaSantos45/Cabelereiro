@@ -1,0 +1,143 @@
+create table servicos(
+	id_servico int PRIMARY key AUTO_INCREMENT not null,
+    servico varchar(50),
+    descricao varchar(255),
+    valor decimal,
+    image_data varchar(255),
+    criado timestamp default CURRENT_TIMESTAMP,
+    atualizado timestamp default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP
+);
+
+INSERT INTO servicos (servico, valor, descricao,image_data)
+VALUES
+  ("CORTE DE CABELO", 50.00, "Corte profissional de cabelo."),
+  ("ESCOVA", 30.00, "Escova e finalização dos cabelos."),
+  ("TINTURAMENTO DE CABELO", 80.00, "Coloração e tintura dos cabelos."),
+  ("LUZES NO CABELO", 70.00, "Realce e iluminação dos cabelos."),
+  ("MANICURE", 25.00, "Tratamento de unhas e esmaltação."),
+  ("MAQUIAGEM", 40.00, "Maquiagem profissional para eventos.");
+
+create table cadastro_colaboradores(
+	  id_colaborador int primary key AUTO_INCREMENT,
+    nomeC_colaborador varchar(50),
+    idade_colaborador int,
+    cargo_colaborador varchar(40),
+    salario float(6,2),
+    criado timestamp default CURRENT_TIMESTAMP,
+    atualizado timestamp default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP
+);
+
+
+
+--------------------------------------------------------
+create table registro_agendado(
+	  id_cliente int PRIMARY key AUTO_INCREMENT,
+    nomeC_comlpleto varchar(255),
+    telefoneC varchar(14),
+    data_agendamento Datetime,
+    servico int,
+    constraint fk_servico FOREIGN key (servico) REFERENCES servicos(id_servico) on UPDATE CASCADE on DELETE set null,
+    criado timestamp DEFAULT CURRENT_TIMESTAMP,
+    atualizado timestamp DEFAULT CURRENT_TIMESTAMP on UPDATE CURRENT_TIMESTAMP
+);
+
+
+----------------------------------------------------------------
+create table contabilidade(
+	id_cont INT AUTO_INCREMENT PRIMARY KEY,
+    tipo_transacao ENUM('entrada', 'saida') NOT NULL,
+    descricao VARCHAR(255) NOT NULL,
+    valor DECIMAL(10, 2) NOT NULL,
+    data_transacao DATE NOT NULL,
+    categoria VARCHAR(50),
+    metodo_pagamento VARCHAR(50),
+    id_cliente INT,
+    id_colaborador INT,
+    status_pagamento ENUM('pendente', 'pago', 'atrasado') NOT NULL,
+    data_vencimento DATE,
+    CONSTRAINT fk_id_cliente FOREIGN KEY (id_cliente) REFERENCES registro_agendado(id_cliente),
+    CONSTRAINT fk_id_colaborador FOREIGN KEY (id_colaborador) REFERENCES cadastro_colaboradores(id_colaborador)
+    
+);
+
+
+
+
+-----------------------------------------------------ABAIXO NADA DE MAIS-------------------------------
+d-flex flex-column
+
+
+
+<form class='d-flex' role='search'>
+                    <input class='form-control me-2' type='search' placeholder='Procure por serviços' aria-label='Search'>
+                    <button class='btn btn-outline-warning' type='submit'>Search</button>
+                </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <ul class='navbar-nav  mb-2  '>
+                    <form class='row row-cols-lg-auto '>
+                        <div class='col-12 align-items-center'>
+                            <input id=type='text' size='10' class='form-control me-auto' placeholder='Usuario'>
+                            <div class='row'>
+                                <small><a href='#' class='text-warning ms-1 '>Cadastrar</a></small>
+                            </div>
+                        </div>
+                        <div class='col-12 '>
+                            <input  type='password' size='10' class='form-control me-auto' placeholder='Senha'>
+                        </div>
+                        <div class='col-12 '>
+                        <input type='submit' value='Entrar' id='entrar' name='entrar'class='btn btn-warning fw-bold text-light btn-outline-dark'>
+                        
+                        </div>
+
+                    </form>
+                </u>   
+
+
+echo"<script>
+const audioPlayer = document.getElementById('audio-player');
+
+if (localStorage.getItem('audioCurrentTime')) {
+
+audioPlayer.currentTime = parseFloat(localStorage.getItem('audioCurrentTime'));
+}
+audioPlayer.addEventListener('timeupdate', function () {
+localStorage.setItem('audioCurrentTime', audioPlayer.currentTime);});
+</script>";
+
+
+
+
+
+
+
+<div class="row mt-5 row justify-content-center">
+            <div class="col-10 bg-body-tertiary rounded-4  " >
+                <h3  class="text-danger mt-2"> BEM VINDO AO </h3>
+                
+                <p class="text-light fs-5 mt-4">
+                    <span class="text-dark fw-bold">Descubra a Beleza que Combina com Você</span> 
+                <div >
+                    <img  src="https://media.gettyimages.com/id/1410142646/pt/foto/customer-enjoying-cup-of-coffee-at-hairdressers.jpg?s=612x612&w=0&k=20&c=ELgsB7WnNWBcMxaes_S-qLbpy_vzFktWS-DQ8QQkKew=" style='width: 23rem;height: 15rem;' class="border border-warning">
+                </div>
+                <br><br>
+                <div style="text-align: justify;">
+                    <span class="text-primary fw-bold">Corte, Cor e Estilo Personalizado - Nós Fazemos Tudo Acontecer</span> <br><br>
+
+                    No ____, acreditamos que a beleza é uma expressão única de quem você é. Nossa equipe de estilistas talentosos está pronta para criar o visual perfeito que complementa a sua individualidade. Desde cortes de cabelo modernos até cores deslumbrantes e penteados sofisticados, nossa paixão é realçar a sua beleza natural.
+                </div>
+                </p>
+            </div>
+        </div>
